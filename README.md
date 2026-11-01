@@ -1,51 +1,42 @@
-# Assignment 4 — Dynamic Programming and String Processing
+# Assignment 4
 
-Java 17 implementation for Design and Analysis of Algorithms.
-Based on the [official assignment template](https://github.com/RZhaniya/daa-assignment-4-archive).
+Dynamic Programming and String Processing — Design and Analysis of Algorithms.
 
-## Implemented commands
+Language: **Java 17**.
 
-| Command | Algorithm |
-|---|---|
-| `lcs` | Prefix dynamic programming and subsequence reconstruction |
-| `merge` | Interval dynamic programming and chronological adjacent-merge plan |
-| `tree` | Iterative maximum-weight independent set and reconstruction |
-| `naive` | Direct character-by-character search |
-| `kmp` | Prefix function and overlap-preserving search |
-| `rk` | Exact Rabin–Karp, base 31/modulus 101, character verification |
-| `suffix` | Prefix doubling, Kasai LCP and longest repeated substring |
-| `aho` | Aho–Corasick with reverse failure-link count propagation |
+## Algorithms
 
-The program reads UTF-8 JSON Lines: one request per line and one result per line.
-Empty inputs, overlapping matches, duplicate dictionary entries and repeated
-requests are supported. Costs and tree totals use 64-bit integers.
+- LCS with subsequence reconstruction
+- Minimum-cost merging of adjacent blocks
+- Maximum-weight independent set on a tree
+- Naive search, KMP and exact Rabin–Karp
+- Suffix array and Kasai LCP
+- Aho–Corasick
 
-## Build and run
+## Run
 
-Requirements: JDK 17+ and Python 3.12+ for the supplied launcher.
-Run from the repository root:
+Install JDK 17+ and Python 3.12+. Python is used by the launcher and tests;
+the algorithm implementations are in `Java/source`.
+
+Run these commands from the project folder:
 
 ```sh
 python3 tools/run.py --setup
-python3 tools/run.py --check
 python3 tools/run.py --input examples/lcs.jsonl
+```
+
+The program reads one JSON request per line and returns one JSON result per line.
+Other input examples are in `examples/`.
+
+## Tests
+
+```sh
+python3 tools/run.py --check
 python3 tests/student/test_algorithms.py --stress
 ```
 
-`submission.json` selects Java. The launcher compiles with `--release 17`.
-Public checks cover 44 cases and a repeated mixed batch. Student tests cover
-2222 independently validated requests and 11 scale fixtures.
-GitHub Actions runs both suites on Java 17.
+GitHub Actions runs both test suites on Java 17.
 
-## Analysis and comparison
+Algorithm explanations, complexity and search timings are in [ANALYSIS.md](ANALYSIS.md).
 
-[ANALYSIS.md](ANALYSIS.md) contains correctness arguments, reconstruction,
-complexity, test evidence and measured naive/KMP/RK comparisons.
-Student test sources and recorded results are in [tests/student](tests/student).
-
-After building, reproduce the comparison with:
-
-```sh
-javac --release 17 -encoding UTF-8 -cp Java/build -d Java/build tests/student/SearchBenchmark.java
-java -Xmx384m -cp Java/build SearchBenchmark
-```
+Based on the [assignment template](https://github.com/RZhaniya/daa-assignment-4-archive).

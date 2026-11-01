@@ -5,7 +5,7 @@
 Selected language: **Java**, Java 17 source/API target (`javac --release 17`).
 Local measurements: OpenJDK 27+35-2325, OpenJDK 64-Bit Server VM, macOS 15.7.1,
 Apple M2 (aarch64), 8 GiB RAM; launcher Python 3.13.1. Java heap: 384 MiB.
-The template's GitHub Actions workflow uses Temurin Java 17 and Python 3.12.
+GitHub Actions uses Temurin Java 17 and Python 3.12 to build and test the Java solution.
 Local measurements are not measurements of the official isolated grading host.
 
 Run these commands from the repository root:
