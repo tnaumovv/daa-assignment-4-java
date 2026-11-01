@@ -1,0 +1,15 @@
+Note: Java/source/Main.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+PASS 2222 independently checked mixed requests (two batches)
+PASS scale lcs: 0.083s
+PASS scale merge: 0.072s
+PASS scale tree: 0.272s
+PASS scale tree: 0.294s
+PASS scale naive: 0.081s
+PASS scale kmp: 0.149s
+PASS scale rk: 0.117s
+PASS scale kmp: 0.171s
+PASS scale suffix: 0.192s
+PASS scale aho: 0.377s
+PASS scale aho: 0.149s
+PASS total wall time 2.146s; Java heap 384 MiB

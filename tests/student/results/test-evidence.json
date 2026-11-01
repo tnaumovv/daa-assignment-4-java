@@ -1,0 +1,321 @@
+[
+  {
+    "actual": {
+      "length": 0,
+      "sequence": ""
+    },
+    "detects": "exhaustive subsequences; ties and empty inputs",
+    "expected": 0,
+    "input": {
+      "a": "",
+      "b": "",
+      "task": "lcs"
+    }
+  },
+  {
+    "actual": {
+      "length": 0,
+      "sequence": ""
+    },
+    "detects": "exhaustive subsequences; ties and empty inputs",
+    "expected": 0,
+    "input": {
+      "a": "",
+      "b": "abc",
+      "task": "lcs"
+    }
+  },
+  {
+    "actual": {
+      "length": 0,
+      "sequence": ""
+    },
+    "detects": "exhaustive subsequences; ties and empty inputs",
+    "expected": 0,
+    "input": {
+      "a": "abc",
+      "b": "",
+      "task": "lcs"
+    }
+  },
+  {
+    "actual": {
+      "length": 4,
+      "sequence": "team"
+    },
+    "detects": "exhaustive subsequences; ties and empty inputs",
+    "expected": 4,
+    "input": {
+      "a": "tea_time",
+      "b": "team",
+      "task": "lcs"
+    }
+  },
+  {
+    "actual": {
+      "length": 1,
+      "sequence": "a"
+    },
+    "detects": "exhaustive subsequences; ties and empty inputs",
+    "expected": 1,
+    "input": {
+      "a": "ab",
+      "b": "ba",
+      "task": "lcs"
+    }
+  },
+  {
+    "actual": {
+      "length": 2,
+      "sequence": "aa"
+    },
+    "detects": "exhaustive subsequences; ties and empty inputs",
+    "expected": 2,
+    "input": {
+      "a": "aaaa",
+      "b": "aa",
+      "task": "lcs"
+    }
+  },
+  {
+    "actual": {
+      "length": 1,
+      "sequence": "a"
+    },
+    "detects": "exhaustive subsequences; ties and empty inputs",
+    "expected": 1,
+    "input": {
+      "a": "a",
+      "b": "aabaab",
+      "task": "lcs"
+    }
+  },
+  {
+    "actual": {
+      "length": 2,
+      "sequence": "cc"
+    },
+    "detects": "exhaustive subsequences; ties and empty inputs",
+    "expected": 2,
+    "input": {
+      "a": "ccacaabb",
+      "b": "cc",
+      "task": "lcs"
+    }
+  },
+  {
+    "actual": {
+      "length": 0,
+      "sequence": ""
+    },
+    "detects": "exhaustive subsequences; ties and empty inputs",
+    "expected": 0,
+    "input": {
+      "a": "b",
+      "b": "aaa",
+      "task": "lcs"
+    }
+  },
+  {
+    "actual": {
+      "length": 3,
+      "sequence": "bbb"
+    },
+    "detects": "exhaustive subsequences; ties and empty inputs",
+    "expected": 3,
+    "input": {
+      "a": "bbb",
+      "b": "bbbabc",
+      "task": "lcs"
+    }
+  },
+  {
+    "actual": {
+      "length": 0,
+      "sequence": ""
+    },
+    "detects": "exhaustive subsequences; ties and empty inputs",
+    "expected": 0,
+    "input": {
+      "a": "cacccbb",
+      "b": "",
+      "task": "lcs"
+    }
+  },
+  {
+    "actual": {
+      "length": 1,
+      "sequence": "c"
+    },
+    "detects": "exhaustive subsequences; ties and empty inputs",
+    "expected": 1,
+    "input": {
+      "a": "c",
+      "b": "acbbaaba",
+      "task": "lcs"
+    }
+  },
+  {
+    "actual": {
+      "length": 1,
+      "sequence": "c"
+    },
+    "detects": "exhaustive subsequences; ties and empty inputs",
+    "expected": 1,
+    "input": {
+      "a": "bbbc",
+      "b": "aaaca",
+      "task": "lcs"
+    }
+  },
+  {
+    "actual": {
+      "length": 0,
+      "sequence": ""
+    },
+    "detects": "exhaustive subsequences; ties and empty inputs",
+    "expected": 0,
+    "input": {
+      "a": "bbcb",
+      "b": "",
+      "task": "lcs"
+    }
+  },
+  {
+    "actual": {
+      "length": 1,
+      "sequence": "b"
+    },
+    "detects": "exhaustive subsequences; ties and empty inputs",
+    "expected": 1,
+    "input": {
+      "a": "cacbac",
+      "b": "b",
+      "task": "lcs"
+    }
+  },
+  {
+    "actual": {
+      "length": 1,
+      "sequence": "c"
+    },
+    "detects": "exhaustive subsequences; ties and empty inputs",
+    "expected": 1,
+    "input": {
+      "a": "cabcabbb",
+      "b": "c",
+      "task": "lcs"
+    }
+  },
+  {
+    "actual": {
+      "cost": 0,
+      "plan": []
+    },
+    "detects": "all adjacent merge orders and long totals",
+    "expected": 0,
+    "input": {
+      "sizes": [],
+      "task": "merge"
+    }
+  },
+  {
+    "actual": {
+      "selected": [],
+      "weight": 0
+    },
+    "detects": "independent subset enumeration",
+    "expected": 0,
+    "input": {
+      "edges": [],
+      "n": 0,
+      "task": "tree",
+      "weights": []
+    }
+  },
+  {
+    "actual": {
+      "positions": [
+        0
+      ]
+    },
+    "detects": "slice oracle: overlap, empty, collision, ASCII",
+    "expected": [
+      0
+    ],
+    "input": {
+      "pattern": "",
+      "task": "naive",
+      "text": ""
+    }
+  },
+  {
+    "actual": {
+      "positions": [
+        0
+      ]
+    },
+    "detects": "slice oracle: overlap, empty, collision, ASCII",
+    "expected": [
+      0
+    ],
+    "input": {
+      "pattern": "",
+      "task": "kmp",
+      "text": ""
+    }
+  },
+  {
+    "actual": {
+      "positions": [
+        0
+      ]
+    },
+    "detects": "slice oracle: overlap, empty, collision, ASCII",
+    "expected": [
+      0
+    ],
+    "input": {
+      "pattern": "",
+      "task": "rk",
+      "text": ""
+    }
+  },
+  {
+    "actual": {
+      "lcp": [],
+      "repeated": "",
+      "sa": []
+    },
+    "detects": "direct sorted suffix and adjacent LCP oracle",
+    "expected": [
+      [],
+      []
+    ],
+    "input": {
+      "task": "suffix",
+      "text": ""
+    }
+  },
+  {
+    "actual": {
+      "counts": [
+        [],
+        []
+      ]
+    },
+    "detects": "direct dictionary oracle with duplicates and fresh texts",
+    "expected": [
+      [],
+      []
+    ],
+    "input": {
+      "patterns": [],
+      "task": "aho",
+      "texts": [
+        "",
+        "a"
+      ]
+    }
+  }
+]
