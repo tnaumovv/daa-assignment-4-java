@@ -49,14 +49,3 @@ After building, reproduce the comparison with:
 javac --release 17 -encoding UTF-8 -cp Java/build -d Java/build tests/student/SearchBenchmark.java
 java -Xmx384m -cp Java/build SearchBenchmark
 ```
-
-## Study and submission
-
-Use the [interactive lesson](https://rzhaniya.github.io/daa-assignment-4-archive/),
-[practice](https://rzhaniya.github.io/daa-assignment-4-archive/practice.html), and
-[study notes](STUDY_AND_SUBMISSION.md).
-
-Submit the exact commit URL with its full 40-character SHA and language **Java**
-in [Moodle Assignment 4](https://lms.astanait.edu.kz/mod/assign/view.php?id=95272).
-Check the successful GitHub Actions run for that SHA. A ZIP is not the submission
-format. Complete the individual defence separately and independently.
